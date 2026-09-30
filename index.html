@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lab 3</title>
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+
+
+
+<body>
+
+
+<div id="box">
+	<p>Click Button 1 to change the colour of this text from blue to red.</p>
+</div>
+	
+	<button onclick=" function1() ">Button 1</button>
+
+
+	<script type="text/javascript">
+		function function1() {
+			document.getElementById('box').style.color = "#F00";
+	
+		}
+	</script>
+
+<br>
+<br>
+<br>
+
+
+<div id="box2">
+	<p>Click Button 2 to increase the value of the number.</p>
+	<h3 id="number">0</h3>
+</div>
+
+<button onclick=" function2() ">Button 2</button>
+
+<script type="text/javascript">
+	let count = 0;
+
+		function function2() {
+			count++;
+			document.getElementById("number").innerHTML = count;
+		}
+</script>
+
+
+
+<br>
+<br>
+<br>
+
+
+
+
+<div id="box3">
+	<p>Click Button 3 to create a new pop-up tab.</p>
+	<button id="button3">Button 3</button>
+</div>
+
+<script>
+document.getElementById("button3").onclick = function () {
+    window.open("lab3popup.html", "");
+};
+</script>
+
+
+
+
+<br>
+<br>
+<br>
+
+<div id="box4">
+    <p>Click Button 4 to make this text really big.</p>
+</div>
+
+<button onclick="function4()">Button 4</button>
+
+<script type="text/javascript">
+    function function4() {
+        document.getElementById("box4").style.fontSize = "40px";
+    }
+</script>
+
+
+
+</body>
+</html>
